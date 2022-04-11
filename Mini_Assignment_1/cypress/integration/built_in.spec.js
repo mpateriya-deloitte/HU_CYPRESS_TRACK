@@ -17,7 +17,27 @@ describe("Assertion Test Using Built in Assertions", ()=> {
             
         })
     })
+
+    it("Validates  Flipkart Plus Image is Visible or not", ()=>{
+        cy.get("div._3qX0zy>a._21ljIi>img").should('be.visible')
+    })
     
+    it("Validates Flipkart Plus Icon redirects to Flipkart Plus Page on Clicking", ()=>{
+        cy.get("div._3qX0zy>a._21ljIi").click()
+        cy.url().should('equal',"https://www.flipkart.com/plus")
+    })
+
+
+    it("Validates  Flipkart Icon is Visible or not", ()=>{
+        cy.get("div._3qX0zy>a>img[alt*='Flipkart']").should('be.visible')
+    })
+    
+    it("Validates  Flipkart Icon redirects to Homepage on Clicking", ()=>{
+        cy.get("div._3qX0zy>a>img[alt*='Flipkart']").click()
+        cy.url().should('equal',"https://www.flipkart.com/")
+    })
+
+
     it("Click on Login Button",()=>{
         cy.get('._1_3w1N').should('have.text', 'Login').click()
     })

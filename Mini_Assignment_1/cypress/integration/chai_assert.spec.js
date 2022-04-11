@@ -10,6 +10,25 @@ describe("Assertion Test Using Chai Assertions", ()=> {
         cy.url().then(url => expect(url).to.be.equal('https://www.flipkart.com/'))
     })
 
+    it("Validates  Flipkart Plus Image is Visible or not", ()=>{
+        cy.get("div._3qX0zy>a._21ljIi>img").then(x=>expect(x).to.be.visible)
+    })
+    
+    it("Validates Flipkart Plus Icon redirects to Flipkart Plus Page on Clicking", ()=>{
+        cy.get("div._3qX0zy>a._21ljIi").click()
+        cy.url().then(url => expect(url).to.be.equal('https://www.flipkart.com/plus'))
+    })
+
+
+    it("Validates  Flipkart Icon is Visible or not", ()=>{
+        cy.get("div._3qX0zy>a>img[alt*='Flipkart']").then(x=>expect(x).to.be.visible)
+    })
+    
+    it("Validates  Flipkart Icon redirects to Homepage on Clicking", ()=>{
+        cy.get("div._3qX0zy>a>img[alt*='Flipkart']").click()
+        cy.url().then(url => expect(url).to.be.equal('https://www.flipkart.com/'))
+    })
+
     it("Validate Product names on launched URL", ()=>{
         const lst = ['Top Offers', 'Grocery', 'Mobiles', 'Fashion', 'Electronics', 'Home', 'Appliances', 'Travel', 'Beauty, Toys & More']
         cy.get('.eFQ30H').each(($el, index) => {
