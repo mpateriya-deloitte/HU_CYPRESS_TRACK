@@ -1,0 +1,14 @@
+{
+  "name": "mini_assignment_1",
+  "version": "1.0.0",
+  "description": "Mini Assignment 1 for HU",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Milind Pateriya",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  }
+}
