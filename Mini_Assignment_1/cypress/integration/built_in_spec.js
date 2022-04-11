@@ -22,12 +22,13 @@ describe("Assertion Test Using Built in Assertions", ()=> {
         cy.get('._1_3w1N').should('have.text', 'Login').click()
     })
     
-    it("Verifies Login Text and Sub-Text", ()=>{
+    it("Verify Login Text and Sub-Text", ()=>{
         cy.get('._36KMOx').should('have.text','Login').should('be.visible')
         cy.get('._1-pxlW').should('have.text','Get access to your Orders, Wishlist and Recommendations').should('be.visible')
     })
     
-    it("Validate Product names on launched URL", ()=>{
-        
+    it("Click Login Button and Verify Error", ()=>{
+        cy.get('._1D1L_j').click()
+        cy.get('._2YULOR').should('have.text', 'Please enter valid Email ID/Mobile number')
     })
 })
