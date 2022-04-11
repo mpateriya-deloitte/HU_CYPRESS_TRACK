@@ -37,6 +37,13 @@ describe("Assertion Test Using Built in Assertions", ()=> {
         cy.url().should('equal',"https://www.flipkart.com/")
     })
 
+    it("Validates More Button is Visible or not", ()=>{
+        cy.get(".exehdJ").should('be.visible')
+    })
+
+    it("Validates More Button Text is Equal or not", ()=>{
+        cy.get(".exehdJ").should('have.text', ' More ')
+    })
 
     it("Click on Login Button",()=>{
         cy.get('._1_3w1N').should('have.text', 'Login').click()

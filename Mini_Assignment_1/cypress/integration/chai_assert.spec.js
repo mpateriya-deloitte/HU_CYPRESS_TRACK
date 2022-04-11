@@ -29,6 +29,14 @@ describe("Assertion Test Using Chai Assertions", ()=> {
         cy.url().then(url => expect(url).to.be.equal('https://www.flipkart.com/'))
     })
 
+    it("Validates More Button is Visible or not", ()=>{
+        cy.get(".exehdJ").then(x=>expect(x).to.be.visible)
+    })
+
+    it("Validates More Button Text is Equal or not", ()=>{
+        cy.get(".exehdJ").then(x=>expect(x.text()).to.be.equal(' More '))
+    })
+
     it("Validate Product names on launched URL", ()=>{
         const lst = ['Top Offers', 'Grocery', 'Mobiles', 'Fashion', 'Electronics', 'Home', 'Appliances', 'Travel', 'Beauty, Toys & More']
         cy.get('.eFQ30H').each(($el, index) => {
