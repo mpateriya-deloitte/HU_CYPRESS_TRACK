@@ -1,0 +1,7 @@
+{
+    "fields":["Full Name", "Email", "Current Address", "Permanent Address"],
+    "fullName": "Milind Pateriya",
+    "email": "avengermilind@gmail.com",
+    "currentAdd": "Sipri Bazar, Jhansi",
+    "permanentAdd": "Mauthana, Lalitpur"
+}

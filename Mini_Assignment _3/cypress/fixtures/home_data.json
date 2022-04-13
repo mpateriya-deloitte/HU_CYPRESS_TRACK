@@ -1,0 +1,7 @@
+{
+    "uri": "https://demoqa.com/",
+    "tiles": ["Elements", "Forms", "Alerts, Frame & Windows", "Widgets", "Interactions", "Book Store Application"],
+    "title": "ToolsQA",
+    "element_url": "https://demoqa.com/elements",
+    "element_title": "ToolsQA"
+}
