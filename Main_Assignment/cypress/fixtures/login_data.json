@@ -1,0 +1,10 @@
+{
+    "title": "Log in",
+    "incorrectUsername": "mpateriya12",
+    "incorrectPassword": "foower",
+    "caseSensitive": "Mpat",
+    "incorrectUserMessage" : "User does not exist.",
+    "successMessage" : "Sign up successful.",
+    "emptyMessage" : "Please fill out Username and Password."
+  }
+  

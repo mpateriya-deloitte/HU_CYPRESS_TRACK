@@ -1,0 +1,8 @@
+{
+  "title": "Sign up",
+  "existingUsername": "mpat",
+  "existingPassword": "12345",
+  "alreadyExistMessage" : "This user already exist.",
+  "successMessage" : "Sign up successful.",
+  "emptyMessage" : "Please fill out Username and Password."
+}
