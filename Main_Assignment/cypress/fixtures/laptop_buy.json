@@ -1,0 +1,9 @@
+{
+    "first_laptop": "MacBook Pro",
+    "second_laptop": "Dell i7 8gb",
+    "first_monitor": "Apple monitor 24",
+    "second_monitor": "ASUS Full HD",
+    "first_phone" : "Nexus 6",
+    "second_phone": "Nokia lumia 1520",
+    "success_message": "Product added."
+}
