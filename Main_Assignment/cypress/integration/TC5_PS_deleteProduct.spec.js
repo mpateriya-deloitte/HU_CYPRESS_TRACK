@@ -6,9 +6,13 @@ import {buyProduct,addtoCart,home} from '../pageObjects/productPage'
 import {clickPlaceOrder,checkProduct,validatePrice,deleteProduct} from '../pageObjects/cartPage'
 import {clickPurchase,clickOk,validateThanks,enterDetailswithCredit,enterDetailswithoutCredit} from '../pageObjects/purchasePage'
 
-describe("Login Test", function() {
+describe("Test 5", function() {
 
     beforeEach(function(){
+        cy.fixture("user_data").then(function(userdata)
+        {
+            this.userdata = userdata
+        })
         cy.fixture("laptop_buy").then(function(data)
         {
             this.data = data
@@ -18,14 +22,9 @@ describe("Login Test", function() {
         {
             this.logdata = logdata
         })
-
-        cy.fixture("user_data").then(function(userdata)
-        {
-            this.userdata = userdata
-        })
     })
 
-    it("Login and Validate User", function(){
+    it("Login and Validation", function(){
         cy.visit(Cypress.env('baseUrl'))
         loginBtnClick();
         assertElements(this.logdata);

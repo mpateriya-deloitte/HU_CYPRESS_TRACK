@@ -6,7 +6,7 @@ import {buyProduct,addtoCart,home} from '../pageObjects/productPage'
 import {clickPlaceOrder,checkProduct,validatePrice} from '../pageObjects/cartPage'
 import {enterDetails, clickPurchase,clickOk,validateThanks} from '../pageObjects/purchasePage'
 
-describe("Login Test", function() {
+describe("Test 3", function() {
 
     beforeEach(function(){
         cy.fixture("laptop_buy").then(function(data)
@@ -25,7 +25,7 @@ describe("Login Test", function() {
         })
     })
 
-    it("Login and Validate User", function(){
+    it("Login and Validation", function(){
         cy.visit(Cypress.env('baseUrl'))
         loginBtnClick();
         assertElements(this.logdata);
